@@ -49,6 +49,43 @@
                 android:id="@+id/gobutton"
 
         />
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:layout_margin="10sp"
+        >
+
+            <TextView
+                    android:text="Date Selected : "
+                    android:textStyle="bold"
+                    android:paddingLeft="10sp"
+                    android:paddingTop="10sp"
+                    android:textSize="20sp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:id="@+id/selectDate"/>
+
+            <TextView android:layout_weight="0.75"
+                      android:layout_marginLeft="10sp"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:layout_gravity="center"
+                      android:textColor="#2E46CA"
+
+                      android:id="@+id/DateText"
+                      android:textStyle="bold"
+                      android:hint="Date "/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/calenderimage"
+                       android:id="@+id/calenderImg"
+            />
+
+
+
+        </LinearLayout>
 
         <Button android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

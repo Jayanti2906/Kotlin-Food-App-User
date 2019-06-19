@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -15,6 +16,7 @@ import java.util.*
 lateinit var ref : DatabaseReference
 var bool_check = false
 var foodType=""
+var dateString = ""
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,12 @@ class MainActivity : AppCompatActivity() {
         var checkMenuButton = findViewById<Button>(R.id.menuButton)
         var platecountText = findViewById<TextView>(R.id.platecountText)
         var foodText = findViewById<TextView>(R.id.foodTypeText)
+        var dateText = findViewById<TextView>(R.id.DateText)
+        var calenderImage =findViewById<ImageView>(R.id.calenderImg)
+
+
+        dateString= SimpleDateFormat("dd.MM.yyyy").format(System.currentTimeMillis()).toString()
+        dateText.text = dateString
 
         val sdt = SimpleDateFormat("HH")
         var curtime  = sdt.format(Date()).toInt()
@@ -47,7 +55,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        calenderImage.setOnClickListener {
+            var obj = DateSelectorClass(this,dateText)
+            obj.showCalender()
+        }
+
         checkMenuButton.setOnClickListener {
+
+
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
 

@@ -45,6 +45,7 @@ class RvAdapter(val context: Context, var dataList: ArrayList<Model>) : Recycler
 }
 
 private fun getMenuData(timing: TextView, food: TextView) {
+
     val ref = FirebaseDatabase.getInstance().getReference("")
     val userListener = object : ValueEventListener {
         override fun onDataChange(dataSnapshot: DataSnapshot) {
@@ -84,7 +85,7 @@ private fun getMenuData(timing: TextView, food: TextView) {
             println("loadPost:onCancelled ${databaseError.toException()}")
         }
     }
-
+    var Datestr = dateString.replace('.','_')
     ref.child("MenuData").addListenerForSingleValueEvent(userListener)
 }
 
