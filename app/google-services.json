@@ -1,0 +1,360 @@
+{
+  "project_info": {
+    "project_number": "1061852259103",
+    "firebase_url": "https://swaykitchen.firebaseio.com",
+    "project_id": "swaykitchen",
+    "storage_bucket": "swaykitchen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:bc8b548761b43c6e",
+        "android_client_info": {
+          "package_name": "com.example.foodmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-6399bv8eenndsrlblu3jpnm52s9k2c5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodmanager",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:776549e00b636a65",
+        "android_client_info": {
+          "package_name": "com.jayanti.foodmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-lu32nu44rea2sm44gq1c8brov8v0cosr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.foodmanager",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-ec9q23ef881pf0ldg9k5or282sc7v6vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.foodmanager",
+            "certificate_hash": "85c151a9f2498b6b5b6d97c8c10f18002c7855cd"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:b39e4a711656664c",
+        "android_client_info": {
+          "package_name": "com.jayanti.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-kh4ih4gqfjfs8qca1js9jv59d4a6fmrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.myapplication",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:599678deed5eb47c",
+        "android_client_info": {
+          "package_name": "com.jayanti.myfoodmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-kncggfd9pu3pnku6r99st67cj4j6e51i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.myfoodmanager",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:0929125e4e1f42a8",
+        "android_client_info": {
+          "package_name": "com.jayanti.myswaykitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-1noa4g7nnfkqau0juuc1rqvsc95idrih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.myswaykitchen",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:28cf045cc877c9f2",
+        "android_client_info": {
+          "package_name": "com.jayanti.myswayuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-sjkoelmps0iso941n9oovgfvk0n3jpln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.myswayuser",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:7bed260a63975612",
+        "android_client_info": {
+          "package_name": "com.jayanti.swayfoodmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-medi3cu4q8hvbuo7533v3ivrrrirbbec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.swayfoodmanager",
+            "certificate_hash": "85c151a9f2498b6b5b6d97c8c10f18002c7855cd"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:8ed57b366bf0ad65",
+        "android_client_info": {
+          "package_name": "com.jayanti.swaykitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-p5a2n3lq6auipatv9qlrl8j1qkndji70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.swaykitchen",
+            "certificate_hash": "85c151a9f2498b6b5b6d97c8c10f18002c7855cd"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061852259103:android:155aa8893f676204",
+        "android_client_info": {
+          "package_name": "com.jayanti.swayuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061852259103-j8v87ho4v67p380huagoc4tt2dqpd3up.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.swayuser",
+            "certificate_hash": "62c36a8a0e77c977c39fdb498c1e7a25b0412e5a"
+          }
+        },
+        {
+          "client_id": "1061852259103-rvu8gi80ct2epaujnnjtsk7vdidv8f21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jayanti.swayuser",
+            "certificate_hash": "85c151a9f2498b6b5b6d97c8c10f18002c7855cd"
+          }
+        },
+        {
+          "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK5kJLlG-9SaOaAh7mVqGjWRTec_lW2nI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061852259103-le4ueket63p7vpkkeg02ob04e44ukq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
