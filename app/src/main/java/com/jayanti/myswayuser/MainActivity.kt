@@ -40,8 +40,8 @@ class MainActivity : AppCompatActivity() {
         val sdt = SimpleDateFormat("HH")
         var curtime  = sdt.format(Date()).toInt()
         if(curtime >= 8 && curtime < 12) {foodType="Breakfast" }
-        else if(curtime >= 13 && curtime <= 15) {foodType="Lunch" }
-        else if(curtime >= 16 && curtime <19) {foodType="Evening Snacks" }
+        else if(curtime >= 12 && curtime <= 15) {foodType="Lunch" }
+        else if(curtime >= 15 && curtime <19) {foodType="Evening Snacks" }
         else if(curtime>=19 && curtime < 24)  { foodType="Dinner"}
         else { foodType= "No food" }
         foodText.setText("$foodType  ")
