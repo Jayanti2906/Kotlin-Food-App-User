@@ -20,6 +20,12 @@
                 android:padding="5sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="300sp"
+                   android:layout_margin="5sp"
+                   android:id="@+id/imageSlot"
+
+        />
 
         <TextView
                 android:id="@+id/Menu"

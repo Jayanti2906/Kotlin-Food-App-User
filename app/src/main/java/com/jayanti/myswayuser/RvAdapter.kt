@@ -5,8 +5,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -17,11 +19,11 @@ lateinit var foodtypeText: TextView
 var Datestr = dateString.replace('.','_')
 var foodArrayIndex =0
 
-class RvAdapter(val context: Context, var dataList: ArrayList<Model>) : RecyclerView.Adapter<RvAdapter.ViewHolder>() {
+class RvAdapter(val context: Context, var dataList: ArrayList<ImageUploadInfo>) : RecyclerView.Adapter<RvAdapter.ViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
         val v = LayoutInflater.from(p0?.context).inflate(R.layout.card_view, p0, false)
         foodArrayIndex =0
-        return ViewHolder(v)
+        return ViewHolder(v,context)
 
     }
 
@@ -34,23 +36,24 @@ class RvAdapter(val context: Context, var dataList: ArrayList<Model>) : Recycler
 
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View,context: Context) : RecyclerView.ViewHolder(itemView) {
         var foodtypeText = itemView.findViewById<TextView>(R.id.foodType)
         val menuText = itemView.findViewById<TextView>(R.id.Menu)
+        val imageSlot = itemView.findViewById<ImageView>(R.id.imageSlot)
 
 
         init {
             Datestr = dateString.replace('.','_')
 
 
-            getMenuData(foodtypeText,menuText)
+            getMenuData(foodtypeText,imageSlot,menuText,context)
 
         }
 
     }
 }
 
-private fun getMenuData(timing: TextView, food: TextView) {
+private fun getMenuData(timing: TextView,imageView: ImageView ,food: TextView,context: Context) {
 
 
     val ref = FirebaseDatabase.getInstance().getReference("")
@@ -73,54 +76,43 @@ private fun getMenuData(timing: TextView, food: TextView) {
                     when(card_num){
                     0 -> {var idx = items.indexOf("BREAKFAST")
                         timing.setText("${items[idx]}")
-                        food.setText("${items[idx+1]}")
+                        Log.e("LOOK BREAKFAST>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
+                        Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
+                        var foodItems = (items[idx+6]).toString()
+                        var foodit = foodItems.replace("}"," ")
+
+                        food.setText("${foodit}")
                         //Log.e("break","$idx")
                     }
                     1 -> {var idx = items.indexOf("LUNCH")
                         timing.setText("${items[idx]}")
-                        food.setText("${items[idx+1]}")
-                        //Log.e("LU","$idx")
+                        var foodItems = (items[idx+6]).toString()
+                        var foodit = foodItems.replace("}"," ")
+                        food.setText("${foodit}")
+                        Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
+                        Log.e("LOOOK LUNCH>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
                     }
                     2 -> {var idx = items.indexOf("SNACKS")
                         timing.setText("${items[idx]}")
-                        food.setText("${items[idx+1]}")
-                        //Log.e("SN","$idx")
+                        var foodItems = (items[idx+6]).toString()
+                        var foodit = foodItems.replace("}"," ")
+                        food.setText("${foodit}")
+                        Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
+                        Log.e("LOOOK SNACKS>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
                     }
                     3 -> {var idx = items.indexOf("DINNER")
                         timing.setText("${items[idx]}")
-                        food.setText("${items[idx+1]}")
-                        //Log.e("DI","$idx")
+                        var foodItems = (items[idx+6]).toString()
+                        var foodit = foodItems.replace("}"," ")
+                        Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
+                        Log.e("LOOOK DINNER>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
+
+                        food.setText("${foodit}")
                     }
                 }
 
                }
-             /*   else {
 
-                   when(card_num){
-                       0 -> {
-                           timing.setText("BREAKFAST")
-                           food.setText("NOT AVAILABLE")
-                           //Log.e("break","$idx")
-                            }
-                       1 -> {
-                           timing.setText("LUNCH")
-                           food.setText("NOT AVAILABLE")
-                           //Log.e("break","$idx")
-                       }
-
-                       2 -> {
-                           timing.setText("SNACKS")
-                           food.setText("NOT AVAILABLE")
-                           //Log.e("break","$idx")
-                       }
-                       3 -> {
-                           timing.setText("DINNER")
-                           food.setText("NOT AVAILABLE")
-                           //Log.e("break","$idx")
-                       }
-                   }
-
-               }  */
 
             }
             card_num = (card_num + 1)%4

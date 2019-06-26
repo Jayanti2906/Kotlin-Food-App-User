@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
 
-        val dataList = ArrayList<Model>()
+        val dataList = ArrayList<ImageUploadInfo>()
 
 
 
