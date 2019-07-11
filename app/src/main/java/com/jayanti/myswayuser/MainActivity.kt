@@ -75,15 +75,21 @@ class MainActivity : AppCompatActivity() {
         val userListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
 
-                for (it in dataSnapshot.children.iterator()) {
-                    var d1 = it.value.toString().split('=')[1]
-                    val re = Regex("[^A-Za-z0-9 ]")
-                    d1 = re.replace(d1, "")
-                    //  textview = findViewById(R.id.textView)
-                    if(foodType=="No food"){platecountText.setText("0")}
-                    else{
-                        platecountText.setText(d1)}
-                    Log.e("LOOK HERE", "${d1}")
+                for (it in dataSnapshot.children.iterator())
+                {
+
+                    Log.e("LOOK HERE", "${it}")        // gives --> DataSnapshot { key = count, value = value entered }
+                    Log.e("LOOK HERE", "${it.value}")  // gives -->  value entered ie the plate count
+
+                    if(foodType=="No food")
+                    {
+                        platecountText.setText("0")
+                    }
+                    else
+                    {
+                        platecountText.setText(it.value.toString())
+                    }
+
                 }
             }
 
