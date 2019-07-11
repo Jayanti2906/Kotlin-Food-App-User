@@ -82,7 +82,7 @@ private fun getMenuData(timing: TextView,imageView: ImageView ,food: TextView,co
                         var foodit = foodItems.replace("}"," ")
 
                         food.setText("${foodit}")
-                        //Log.e("break","$idx")
+
                     }
                     1 -> {var idx = items.indexOf("LUNCH")
                         timing.setText("${items[idx]}")
@@ -90,7 +90,7 @@ private fun getMenuData(timing: TextView,imageView: ImageView ,food: TextView,co
                         var foodit = foodItems.replace("}"," ")
                         food.setText("${foodit}")
                         Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
-                        Log.e("LOOOK LUNCH>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
+                       // Log.e("LOOOK LUNCH>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
                     }
                     2 -> {var idx = items.indexOf("SNACKS")
                         timing.setText("${items[idx]}")
@@ -98,15 +98,14 @@ private fun getMenuData(timing: TextView,imageView: ImageView ,food: TextView,co
                         var foodit = foodItems.replace("}"," ")
                         food.setText("${foodit}")
                         Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
-                        Log.e("LOOOK SNACKS>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
+                        //Log.e("LOOOK SNACKS>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
                     }
                     3 -> {var idx = items.indexOf("DINNER")
                         timing.setText("${items[idx]}")
                         var foodItems = (items[idx+6]).toString()
                         var foodit = foodItems.replace("}"," ")
                         Glide.with(context).load(items[idx+2]+"="+items[idx+3]+"="+items[idx+4]).into(imageView)
-                        Log.e("LOOOK DINNER>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
-
+                       // Log.e("LOOOK DINNER>>","${items[idx+2]+"="+items[idx+3]+"="+items[idx+4]}")
                         food.setText("${foodit}")
                     }
                 }

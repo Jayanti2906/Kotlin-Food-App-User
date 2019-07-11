@@ -17,7 +17,7 @@ class FirebaseClass {
         val bookId:String? = ref.push().key
         val rdata = ReservedData(bookId,name)
         ref.child(bookId!!).setValue(rdata).addOnCompleteListener {
-            // Toast.makeText(applicationContext,"Your plate is reserved ! ", Toast.LENGTH_LONG).show()
+
             bool_check = true
         }
     }

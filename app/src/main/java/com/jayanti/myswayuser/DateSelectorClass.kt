@@ -34,7 +34,7 @@ class DateSelectorClass(val context : Context, textView: TextView)
             cal.get(Calendar.DAY_OF_MONTH)
         ).show()
     }
- // calculatig the date of setting the menu
+
 
 
 }
